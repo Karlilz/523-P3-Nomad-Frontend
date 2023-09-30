@@ -1,16 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
+import Header from "./components/Header"
 import Nav from './components/Nav';
 // import { Outlet } from 'react-router-dom';
-
+// import Post from './components/Post';
+import {Route, Routes} from "react-router-dom"
+import IndexPage from "./pages/Home/IndexPage"
+import LoginPage from "./pages/LoginPage"
+import SignUpPage from "./pages/SignUpPage"
 
 function App() {
   return (
-    <div className="App" style={{background:"black"}}>
-      <Header/>
-      {/* <Outlet/> */}
-    </div>
+    
+   
+  
+    <Routes>
+      <Route path ="/" element ={<Nav/>}>
+      <Route index element ={<IndexPage/>} />
+      <Route path ='/login' element ={<LoginPage/>}/>
+      <Route path = "/register" element ={<SignUpPage/>}/>
+    </Route>
+    </Routes>
+   
   );
 }
 
