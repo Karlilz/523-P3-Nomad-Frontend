@@ -52,7 +52,6 @@ body {
   background-color: black;
 } */
 
-/* some css to index page*/
 *{
   box-sizing: border-box;
 }
@@ -121,7 +120,6 @@ div.post p.summary{
   line-height: 1.4rem;
 }
 
-/* some css to signup and log in pages */
 
 form.login, form.register{
   max-width: 400px;
