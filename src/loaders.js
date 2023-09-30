@@ -1,4 +1,4 @@
-const URL=""
+const URL="https://nomad-blog.onrender.com"
 
 // travel blog LOADER
 export const travelBlogLoader = async () => {
