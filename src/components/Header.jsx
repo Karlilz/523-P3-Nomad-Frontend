@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Nav from './Nav';
 
 const Header = () => {
   return (
-    <div style={{fontSize:"35px", background:"black", color:"white", textTransform:"uppercase"}}>
-        <h1>Nom@d</h1>
+    <div style={{display: 'flex',justifyContent: 'space-between', alignItems: 'center', fontSize: '35px', color: 'white', textTransform: 'uppercase', textAlign: 'left', padding: '0 20px'}}>
+      <h1>Nom@d</h1>
+      <Nav />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
