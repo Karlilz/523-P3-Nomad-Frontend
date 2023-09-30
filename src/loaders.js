@@ -1,6 +1,6 @@
 const URL="https://nomad-blog.onrender.com"
 
-// travel blog LOADER
+// TRAVEL BLOG LOADER
 export const travelBlogLoader = async () => {
   const response = await fetch(URL+'/travelblog')
   const travelblog = await response.json()
