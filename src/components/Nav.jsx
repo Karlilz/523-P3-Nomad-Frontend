@@ -5,11 +5,11 @@ const Nav = (props) => {
   return (
     <div className="nav"  style={{color: "white", display:'flex', flexDirection:'row', justifyContent:'space-around',backgroundColor: 'black', height: '60px' }}>
     {/* <Link to="/" */}
-      <img src="/images/HomeIcon.png" alt="Home Icon" style={{width:"60px", height:"60px"}} />
+      <img src="/images/HomeIcon.png" alt="Home Icon" style={{width:"65px", height:"65px"}} />
     {/* </Link> */}
 
     {/* <Link to="/" */}
-      <img src="/images/SearchIcon.png" alt="Search Icon" style={{width:"60px", height:"60px"}} />
+      {/* <img src="/images/SearchIcon.png" alt="Search Icon" style={{width:"60px", height:"60px"}} /> */}
     {/* </Link> */}
 
     {/* <Link to="/about" */}
@@ -19,6 +19,11 @@ const Nav = (props) => {
     {/* <Link to="/profile" */}
       <img src="/images/ProfileIcon.png" alt="Profile Icon" style={{width:"60px", height:"60px"}}/>
     {/* </Link> */}
+
+    {/* <Link to="/profile" */}
+      <img src="/images/LogoutIcon.png" alt="Logout Icon" style={{width:"60px", height:"60px"}}/>
+    {/* </Link> */}
+
   </div>
   );
 };
