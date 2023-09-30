@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App" style={{background:"black"}}>
       <Header/>
-      <Nav/>
       {/* <Outlet/> */}
     </div>
   );
