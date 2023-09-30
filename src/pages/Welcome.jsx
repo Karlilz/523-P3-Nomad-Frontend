@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Link } from 'react-router-dom';
 
-const Home = () => {
+const Welcome = () => {
   return (
     <div>
       <h1>Nom@d</h1>
@@ -24,7 +24,7 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Welcome;
 
 
 // {/* // import React, { useState } from 'react';
