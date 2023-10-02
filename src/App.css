@@ -52,7 +52,7 @@ body {
   background-color: black;
 } */
 
-/* some css to index page */
+/* some css to index page*/
 *{
   box-sizing: border-box;
 }
@@ -148,4 +148,6 @@ button{
 }
 form h1{
   text-align: center;
-}
+} 
+
+
