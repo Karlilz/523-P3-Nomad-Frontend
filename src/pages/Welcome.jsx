@@ -1,30 +1,30 @@
-import React from 'react';
-import { Form, Link } from 'react-router-dom';
+// import React from 'react';
+// import { Form, Link } from 'react-router-dom';
 
-const Welcome = () => {
-  return (
-    <div>
-      <h1>Nom@d</h1>
-      <h2>Create Account</h2>
-      <Form>
-        <input type="text" name="username" placeholder="Username"/>
-        <input type="text" name="email" placeholder="Email"/>
-        <input type="text" name="password" placeholder="Password"/>
-      </Form>
+// const Welcome = () => {
+//   return (
+//     <div>
+//       <h1>Nom@d</h1>
+//       <h2>Create Account</h2>
+//       <Form>
+//         <input type="text" name="username" placeholder="Username"/>
+//         <input type="text" name="email" placeholder="Email"/>
+//         <input type="text" name="password" placeholder="Password"/>
+//       </Form>
 
-      <Link to="/signup">
-        <button>Create Account</button>
-      </Link>
+//       <Link to="/signup">
+//         <button>Create Account</button>
+//       </Link>
 
-      <Link to="/login">
-        <h2>Already Have an Account?</h2>
-        <button>Sign In</button>
-      </Link>
-    </div>
-  );
-};
+//       <Link to="/login">
+//         <h2>Already Have an Account?</h2>
+//         <button>Sign In</button>
+//       </Link>
+//     </div>
+//   );
+// };
 
-export default Welcome;
+// export default Welcome;
 
 
 // {/* // import React, { useState } from 'react';
