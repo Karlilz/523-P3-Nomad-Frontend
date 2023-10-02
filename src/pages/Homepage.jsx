@@ -1,14 +1,3 @@
-// // import React from 'react'
-
-// // const Homepage = () => {
-// //   return (
-// //     <div>Homepage</div>
-// //   )
-// // }
-
-// // export default Homepage
-
-
 // import React from 'react';
 // import seedData from './data.json'; 
 // import Nav from '../components/Nav';
