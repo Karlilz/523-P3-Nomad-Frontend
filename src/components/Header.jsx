@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
  import {Link} from "react-router-dom"
 
+
  const Header = () => {
   const [username,setUsername] = useState(null)
     useEffect(() =>{
@@ -8,6 +9,7 @@ import React, { useState, useEffect } from 'react';
         credentials: 'include',
       }).then(response =>{
         response.json().then(userInfo=> {
+
           setUsername(userInfo.username)
         })
       })
@@ -33,8 +35,8 @@ import React, { useState, useEffect } from 'react';
           )}
           {!username && (
             <>
-            <Link to = "/login">Login</Link>
-            <Link to = "/signup">SignUp</Link>
+            <Link href = "/login">Login</Link>
+            <Link href = "/signup">SignUp</Link>
             </>
           )}
         </nav>

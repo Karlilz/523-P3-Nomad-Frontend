@@ -53,6 +53,7 @@ body {
 } */
 
 /* some css to index page*/
+
 *{
   box-sizing: border-box;
 }
@@ -147,6 +148,10 @@ button{
 }
 form h1{
   text-align: center;
+<<<<<<< HEAD
 } 
 
 
+=======
+}
+>>>>>>> 08139bd (added loginpage,signup,app.js)
