@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
       fetch('http://localhost:3000/profile',{
         credentials: 'include',
       }).then(response =>{
-        response.json().then(userInfo=> {
+        response.json(). then(userInfo=> {
           setUsername(userInfo.username)
         })
       })
@@ -32,8 +32,8 @@ import React, { useState, useEffect } from 'react';
           )}
           {!username && (
             <>
-            <Link to = "/login">Login</Link>
-            <Link to = "/signup">SignUp</Link>
+            <Link href = "/login">Login</Link>
+            <Link href = "/signup">SignUp</Link>
             </>
           )}
         </nav>
