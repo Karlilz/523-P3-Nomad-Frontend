@@ -13,14 +13,11 @@ import SignUpPage from "./pages/SignUpPage"
 
 function App() {
   return (
-    
-   
-  
     <Routes>
       <Route path ="/" element ={<Nav/>}>
       <Route index element ={<IndexPage/>} />
       <Route path ='/login' element ={<LoginPage/>}/>
-      <Route path = "/register" element ={<SignUpPage/>}/>
+      <Route path = "/signup" element ={<SignUpPage/>}/>
     </Route>
     </Routes>
    
