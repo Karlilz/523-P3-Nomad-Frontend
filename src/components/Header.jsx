@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
  const Header = () => {
   const [username,setUsername] = useState(null)
     useEffect(() =>{
-      fetch('http://localhost:3000/profile',{
+      fetch('https://nomad-blog.onrender.com/profile',{
         credentials: 'include',
       }).then(response =>{
         response.json().then(userInfo=> {
@@ -14,7 +14,7 @@ import React, { useState, useEffect } from 'react';
     })
  
     function logout(){
-      fetch('http://localhost:3000/logout', {
+      fetch('https://nomad-blog.onrender.com/logout', {
         credentials: 'include',
         method: 'POST',
       });
@@ -26,6 +26,7 @@ import React, { useState, useEffect } from 'react';
         <nav>
           {username && (
             <>
+            <Link to = "/profile">Profile</Link>
              <Link to = "/create">Add Post</Link>
              <a onClick={logout}>Logout</a>
             </>
