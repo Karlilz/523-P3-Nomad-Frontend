@@ -7,7 +7,7 @@ const LoginPage = () => {
     const [redirect,setRedirect] =useState(false);
     async function login(e){
         e.preventDefault();
-       const response=  await fetch('http://localhost:3000/login',{
+       const response=  await fetch('https://nomad-blog.onrender.com/login',{
             method:'POST',
             body: JSON.stringify({username,password}),
             headers:{'Content-Type':'application/json'},
