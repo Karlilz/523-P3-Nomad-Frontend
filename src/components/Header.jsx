@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
  const Header = () => {
   const [username,setUsername] = useState(null)
     useEffect(() =>{
-      fetch('https://nomad-blog.onrender.com/profile',{
+      fetch('http://localhost:3000/profile',{
         credentials: 'include',
       }).then(response =>{
         response.json().then(userInfo=> {
@@ -15,7 +15,7 @@ import React, { useState, useEffect } from 'react';
     })
  
     function logout(){
-      fetch('https://nomad-blog.onrender.com/logout', {
+      fetch('http://localhost:3000/logout', {
         credentials: 'include',
         method: 'POST',
       });
