@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Homepage from './pages/Homepage';
 import Login from './pages/Login';
-// import Nav from './components/Nav';
+import Nav from './components/Nav';
 // import { Outlet } from 'react-router-dom';
 // import Post from './components/Post';
 import {Route, Routes} from "react-router-dom"
