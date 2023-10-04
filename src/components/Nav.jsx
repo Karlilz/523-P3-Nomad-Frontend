@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React from "react";
 // import { Link } from "react-router-dom";
 
@@ -25,5 +26,44 @@
 // };
 
 // export default Nav;
+=======
+import React from "react";
+import Header from "../components/Header"
+import { Outlet } from "react-router-dom";
+
+
+ const Nav = (props) => {
+return (
+//     <div className="nav">
+
+//       {/* <Link to="/"> */}
+//         <img src="/images/HomeIcon.png" alt="Home Icon" style={{ width: "50px", height: "50px", marginRight: "10px" }}/>
+//       {/* </Link> */}
+
+//       {/* <Link to="/"> */}
+//         {/* <img src="/images/SearchIcon.png" alt="Search Icon" style={{ width: "40px", height: "40px", marginRight: "10px" }}/> */}
+//       {/* </Link> */}
+
+//       {/* <Link to="/about"> */}
+//         <img src="/images/PostIcon.png" alt="Post Icon" style={{ width: "40px", height: "40px", marginRight: "10px" }}/>
+//       {/* </Link> */}
+
+//       {/* <Link to="/profile"> */}
+//         <img src="/images/ProfileIcon.png" alt="Profile Icon" style={{ width: "40px", height: "40px", marginRight: "10px" }}/>
+//       {/* </Link> */}
+
+//       {/* <Link to="/"> */}
+//         <img src="/images/LogoutIcon.png" alt="Logout Icon" style={{ width: "60px", height: "60px", marginRight: "10px" }}/>
+//       {/* </Link> */}
+//     </div>
+    <main>
+        <Header />
+        <Outlet />
+    </main>
+  );
+};
+
+export default Nav;
+>>>>>>> 22582ba (routes added to pages)
 
 

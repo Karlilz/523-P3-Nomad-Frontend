@@ -5,16 +5,25 @@ import Homepage from './pages/Homepage';
 import Login from './pages/Login';
 // import Nav from './components/Nav';
 // import { Outlet } from 'react-router-dom';
-
+// import Post from './components/Post';
+import {Route, Routes} from "react-router-dom"
+import IndexPage from "./pages/Home/IndexPage"
+import LoginPage from "./pages/LoginPage"
+import SignUpPage from "./pages/SignUpPage"
 
 function App() {
   return (
-    <div className="App" style={{background:"black"}}>
-      <Login/>
-      <Header/>
-      <Homepage/>
-      {/* <Outlet/> */}
-    </div>
+    
+   
+  
+    <Routes>
+      <Route path ="/" element ={<Nav/>}>
+      <Route index element ={<IndexPage/>} />
+      <Route path ='/login' element ={<LoginPage/>}/>
+      <Route path = "/register" element ={<SignUpPage/>}/>
+    </Route>
+    </Routes>
+   
   );
 }
 
