@@ -35,5 +35,3 @@ return (
 };
 
 export default Nav;
-
-
