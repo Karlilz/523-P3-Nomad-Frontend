@@ -9,8 +9,7 @@ import React, { useState, useEffect } from 'react';
         credentials: 'include',
       }).then(response =>{
         response.json().then(userInfo=> {
-
-          setUsername(userInfo.username)
+         setUsername(userInfo.username)
         })
       })
     })
@@ -35,8 +34,8 @@ import React, { useState, useEffect } from 'react';
           )}
           {!username && (
             <>
-            <Link href = "/login">Login</Link>
-            <Link href = "/signup">SignUp</Link>
+            <Link to = "/login">Login</Link>
+            <Link to = "/signup">SignUp</Link>
             </>
           )}
         </nav>

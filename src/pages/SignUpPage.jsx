@@ -14,7 +14,6 @@ const SignUpPage = () => {
         console.log(response)
     if(response.status === 200){
         alert('Sign up Success!');
-
     } else {
         alert('Sign up Failed!');
      }
