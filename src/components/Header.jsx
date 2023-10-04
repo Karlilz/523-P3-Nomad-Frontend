@@ -27,6 +27,7 @@ import React, { useState, useEffect } from 'react';
         <nav>
           {username && (
             <>
+            <Link to = "/profile">Profile</Link>
              <Link to = "/create">Add Post</Link>
              <a onClick={logout}>Logout</a>
             </>

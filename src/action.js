@@ -1,6 +1,6 @@
 import { redirect } from "react-router-dom";
 
-const URL = "https://nomad-blog.onrender.com"
+// const URL = "https://nomad-blog.onrender.com"
 
 
 // CREATE ACTION 
