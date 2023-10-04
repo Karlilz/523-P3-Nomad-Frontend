@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 //import Nav from './Nav';
  import {Link} from "react-router-dom"
 
@@ -8,26 +8,33 @@ import React, { useState } from 'react';
       fetch('http://localhost:3000/profile',{
         credentials: 'include',
       }).then(response =>{
-        response.json(). then(userInfo=> {
+        response.json().then(userInfo=> {
           setUsername(userInfo.username)
         })
       })
     })
+ 
+    function logout(){
+      fetch('http://localhost:3000/logout', {
+        credentials: 'include',
+        method: 'POST',
+      });
+      setUsername(null);
+    }
     return (
       <header>
         <Link to= "/" className = "logo">Nom@d</Link> 
         <nav>
-          <Link href = "/">Home</Link>
           {username && (
             <>
              <Link to = "/create">Add Post</Link>
-             <a>Logout</a>
+             <a onClick={logout}>Logout</a>
             </>
           )}
           {!username && (
             <>
-            <Link href = "/login">Login</Link>
-            <Link href = "/signup">SignUp</Link>
+            <Link to = "/login">Login</Link>
+            <Link to = "/signup">SignUp</Link>
             </>
           )}
         </nav>

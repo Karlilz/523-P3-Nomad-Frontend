@@ -11,7 +11,7 @@ const SignUpPage = () => {
             headers:{'Content-Type': 'application/json'},
         });
     if(response.status === 200){
-        alert('Sign up Sucess!');
+        alert('Sign up Success!');
     } else {
         alert('Sign up Failed!');
      }
